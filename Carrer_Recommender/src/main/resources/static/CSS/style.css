@@ -1,0 +1,196 @@
+@charset "UTF-8";
+body{
+font-family:"Segoe UI",sans-serif;
+margin:0;
+padding:0;
+background-color:#000;
+text-align:center;	
+}
+.container{
+	padding:60px 20px 20px;
+}
+.container img{
+	width: 200px;
+	height: 200px;
+	border-radius: 15px;
+	display: block;
+	margin: 0 auto 10px;
+}
+
+h1{
+	font-size:2em;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+h2{
+	
+	font-weight:bold;
+	font-style:italic;
+	margin-bottom:10px;
+}
+
+p{
+	font-size:1.1em;
+	color:#555;
+	margin-bottom:30px;
+}
+
+.btn{
+	background-color:#007bff;
+	color:#FFF;
+	padding:12px 25px;
+	font-size:1em;
+	boder:none;
+	border-radius:5px;
+	cursor:pointer;
+	text-decoration:none;
+	
+}
+
+.feature{
+	display:flex;
+	justify-content:center;
+	gap:30px;
+	flex-wrap:wrap;
+	margin-top:50px;
+}
+
+.feature-box {
+	width: 250px;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center; /* ✅ Add this */
+}
+
+.feature-box img {
+	width: 90px;
+	height: 90px;
+	border-radius: 15px;
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.feature-box a {
+	font-size: 1.1em;
+	color: black;
+	text-decoration: none;
+	display: block;
+	margin-top: 10px;
+}
+
+.feature-box a:hover {
+	color: black;
+	text-decoration: underline;
+}
+.my-card{
+	padding:20px;
+	background: #ffffff;
+	border: 5px solid black;
+	
+}
+
+ 
+  .card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            border-radius: 10px;
+        }
+        .card:hover {
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .btn-custom {
+            border-radius: 20px;
+        }
+        .resource-list a {
+            display: block;
+            margin-bottom: 6px;
+            text-decoration: none;
+            color: #0d6efd;
+        }
+        .resource-list a:hover {
+            text-decoration: underline;
+        }
+
+
+/* ---------- Result Page Styling ---------- */
+.result-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #f9f9f9;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.result-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.roadmap-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 6px solid #007bff;
+    margin-bottom: 30px;
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: #444;
+}
+
+.roadmap-card h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #222;
+}
+
+.roadmap-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.roadmap-card li {
+    margin-bottom: 10px;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .result-container {
+        padding: 20px;
+    }
+
+    .roadmap-card {
+        padding: 15px;
+    }
+}
+.btn-download {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+
+
+
+

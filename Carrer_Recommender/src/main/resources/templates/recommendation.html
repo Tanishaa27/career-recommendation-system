@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Recommendation Page</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<section>
+        <div class=" container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+<div class="forms text-center">
+   
+    <h2>Get a Personalized Career Recommendation</h2>
+    <p class="text-muted">Share your skills, interests, and experience so we can match you with the best-fit career paths.</p>
+</div>
+<form th:action="@{/careerForm}" method="post" th:object="${skillInput}">
+    
+    <!-- Skills -->
+    <div class="mb-3">
+        <label class="form-label">Your Skills</label>
+        <input type="text" class="form-control" th:field="*{skills}" placeholder="e.g. Java, HTML, SQL" />
+    </div>
+
+    <!-- Interest Area -->
+    <div class="mb-3">
+        <label class="form-label">Interest Area</label>
+        <input type="text" class="form-control" th:field="*{interestArea}" placeholder="e.g. Web Development" />
+    </div>
+    
+    <!-- has project -->
+    <label class="form-label"> Working on Project</label>
+<select class="form-select" th:field="*{hasProject}">
+    <option value="">-- Select --</option>
+    <option th:value="true">Yes</option>
+    <option th:value="false">No</option>
+</select>
+
+   
+
+    <!-- Project Description -->
+    <div class="mb-3">
+        <label class="form-label">Project Description</label>
+        <textarea class="form-control" rows="3" th:field="*{projectDescription}" placeholder="Describe your project..."></textarea>
+    </div>
+
+    <!-- Project Type -->
+    <div class="mb-3">
+        <label class="form-label">Project Type</label>
+        <select class="form-select" th:field="*{projectType}">
+           <option value="Frontend">Frontend</option>
+        <option value="Backend">Backend</option>
+        <option value="Full Stack">Full Stack</option>
+        <option value="AI/ML">AI/ML</option>
+        <option value="Android">Android</option>
+        <option value="Desktop">Desktop Application</option>
+        <option value="Game">Game Development</option>
+        <option value="Others">Others</option>
+        </select>
+    </div>
+
+    <!-- Education Level -->
+    <div class="mb-3">
+        <label class="form-label">Education Level</label>
+        <select class="form-select" th:field="*{educationLevel}">
+            <option value="" >Select education level</option>
+            <option value="10th">10th</option>
+            <option value="12th">12th</option>
+            <option value="Becholr's">Bacholr"s</option>
+            <option value="Master's">Master's</option>
+            <option value="Phd">PHD</option>
+        </select>
+    </div>
+
+    <!-- Experience Years -->
+    <div class="mb-3">
+        <label class="form-label">Years of Experience</label>
+        <input type="number" min="0" class="form-control" th:field="*{experienceYears}" placeholder="e.g. 0 if fresher" />
+    </div>
+
+    <!-- Submit -->
+    <button type="submit" class="btn btn-primary">Get Career Recommendation</button>
+</form>
+
+
+
+
+   
+            
+                        
+
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+	<meta charset="UTF-8" />
+	<title>Career Recommendation</title>
+<link rel="stylesheet" th:href="@{/CSS/style.css}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+	
+	<div class="container text-center">
+	<img src="/img/career_recomm.jpg" alt="Career Recommendation ">
+	<h1>CARRER </h1>
+	<h1>RECOMMENDATION </h1>
+	<h1>SYSTEM</h1><br>
+	<h2>Discover Your Ideal Career Based On Your Skills And Interest.</h2>
+	</div>
+	
+	<div class="feature">
+	<div class="feature-box">
+	<img src="/img/skills.svg" alt="Enter Your Skills">
+	<a th:href="@{/about}">Tell US About Yourself</a>
+	</div>
+	<div class="feature-box">
+	<img src="/img/recommendation.svg" alt="Get Personalized Recommendation">
+	<p><a th:href="@{/recommendation}">Enter Your Skills</a></p>
+	</div>
+	<div class="feature-box">
+	<img src="/img/carrer.svg" alt="Carrer Path">
+	<p><a href=#>Get Personalized Recommendation</a></p>
+	</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* ======= ROADMAP PAGE STYLING ======= */
+.roadmap-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    font-size: 1.05em;
+}
+
+.roadmap-container h1, 
+.roadmap-container h2, 
+.roadmap-container h3 {
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+}
+
+.roadmap-container ul {
+    padding-left: 24px;
+}
+
+.roadmap-container li {
+    margin-bottom: 8px;
+}
+
+.roadmap-container code {
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90%;
+}
+
+.roadmap-container pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+}

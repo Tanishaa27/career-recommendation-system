@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title th:text="${title}">Career Roadmap</title>
+    <link rel="stylesheet" th:href="@{/css/roadmap.css}">
+    <link rel="stylesheet" th:href="@{/CSS/style.css}">
+    
+</head>
+<body>
+
+<div class="result-container">
+    <h1 th:text="${title}">Your Career Roadmap</h1>
+    
+    <div class="roadmap-card">
+        <div th:utext="${roadmap}"></div>
+    </div>
+
+    <a href="/recommendation" class="btn btn-back">← Back to Skill Form</a>
+  <div class="button-group">
+    <a href="/recommendation" class="btn btn-back">← Back to Skill Form</a>
+    <a th:href="@{'/download/' + ${career}}" class="btn btn-download">⬇ Download Roadmap as PDF</a>
+</div>
+  
+    
+</div>
+
+</body>
+</html>
